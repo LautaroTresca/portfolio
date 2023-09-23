@@ -3,10 +3,13 @@
 *{
     height: 100%;
     width: inherit;
-    overflow: hidden;
 }
 
 body{
+    background-image: url(assets/milad-fakurian-nY14Fs8pxT8-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     font-family: 'Barlow', sans-serif;
@@ -63,8 +66,6 @@ a{
     display: grid;
     place-content: center;
     width: 100%;
-    background-image: url(assets/layered-waves-haikei.svg);
-    background-size:cover;
 }
 .presentacion-texto{
     position: relative;
@@ -73,4 +74,26 @@ a{
     font-size: 100px;
     margin: 0;
     width: fit-content;
+}
+
+.sub-presentacion{
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    color: white;
+    background-color: #000000cc;
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+.sub-presentacion-texto{
+    font-size: 2rem;
+    height: max-content;
+}
+
+.foto-perfil{
+    width: 300px;
+    height: 300px;
+    border-radius: 250px;
+    object-fit: cover;
 }

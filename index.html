@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lautaro Tresca | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header class="nav">
+    <header class="nav" data-aos="fade-down" data-aos-duration="1500">
         <section class="nav-icono-nombre">
             <img class="icono-nombre" src="assets/luna-nueva.png" alt="icono">
             <a href="index.html">
@@ -30,12 +32,19 @@
     </header>
     
     <main>
-        <section class="presentacion">
+        <section class="presentacion" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
             <p class="presentacion-texto">Hi!</p>
-            <p class="presentacion-texto">I'm Lautaro, a Front-End Developer.</p>
+            <p class="presentacion-texto">I'm Lautaro Tresca.</p>
+        </section>
+
+        <section class="sub-presentacion" data-aos="fade-in" data-aos-duration="1000">
+            <img class="foto-perfil" src="assets/foto-perfil.jpg" alt="foto-perfil" data-aos="fade-in" data-aos-delay="700" data-aos-duration="2000">
+            <aside class="sub-presentacion-texto" data-aos="fade-right" data-aos-duration="2000">Soy desrrollador web Front-End, con manejo de ReactJS. Vivo en Argentina mas especificamente en Rio Tercero provincia de Cordoba. Me apasiona podes crear codigos que aporten soluciones, ademas del diseño. Tengo conocimiento de HTML, CSS, JavasCript y ReactJS. Soy autodidacta y actualmente me encuentro en el aprendizaje de nuevas herramientas-tecnologias para poder ampliar mi portafolio.</aside>
         </section>
     </main>
 
-    <script src="main.js"></script>
+    <script src="main.js"></script>;
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
+    <script>AOS.init();</script>;
 </body>
 </html>
