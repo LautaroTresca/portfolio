@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;700&family=Raleway:wght@300;400;700&display=swap');
 
 *{
-    height: 100%;
-    width: inherit;
+    margin: 0;
+    padding: 0;
 }
+
+::-webkit-scrollbar{
+    display: none;
+}
+
 
 body{
     background-image: url(assets/milad-fakurian-nY14Fs8pxT8-unsplash.jpg);
@@ -17,6 +22,7 @@ body{
 }
 
 a{
+    width: fit-content;
     text-decoration: none;
     color:initial;
 }
@@ -36,7 +42,7 @@ a{
     display: flex;
     box-shadow: black 0px -10px 32px;
     height: 5rem;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     padding: 0rem 3rem;
 }
@@ -67,6 +73,7 @@ a{
     display: grid;
     place-content: center;
     width: 100%;
+    height: 53rem;
 }
 .presentacion-texto-1{
     position: relative;
@@ -132,4 +139,48 @@ a{
 .iconos-tecnologias{
     width: 120px;
     height: 120px;
+}
+
+.proyectos{
+    box-shadow: black 1px 1px 1px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000cc;
+    padding: 4rem 0rem 0rem 0rem;
+    color: white;
+    gap: 15rem;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.screen-proyecto{
+    opacity: 90%;
+    width: 500px;
+    height: 300px;
+    object-fit:cover;
+    object-position: center;
+    border: #575656 solid 1px;
+}
+
+.screen-proyecto:hover{
+    opacity: 70%;
+    border: #999999 solid 1px;
+    transition: ease-in-out .3s;
+}
+
+.contenedor-titulo-descripcion-proyecto{
+    display: flex;
+    height: fit-content;
+    width: 512px;
+    flex-direction: column;
+}
+
+.descripcion-proyecto{
+    font-size: 20px;
 }

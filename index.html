@@ -22,33 +22,75 @@
                 <p class="panel-navegacion-home">Home</p>
             </a>
             <a href="">
-                <p class="panel-navegacion-about"> About</p>
+                <p class="panel-navegacion-about">Sobre Mi</p>
             </a>
             <a href="">
-                <p class="panel-navegacion-work"> Work</p>
+                <p class="panel-navegacion-work">Proyectos</p>
             </a>
         </section>
 
     </header>
     
     <main>
-        <section class="presentacion" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1400">
+        <aside class="presentacion" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="1400">
             <p class="presentacion-texto-1">¡Hola!</p>
             <p class="presentacion-texto-2">Soy Lautaro Tresca</p>
             <p class="presentacion-texto-3">Desarrollador web Front-End</p>
-        </section>
+        </aside>
 
-        <section class="sub-presentacion" data-aos="fade-in" data-aos-duration="1000">
+        <aside class="sub-presentacion" data-aos="fade-in" data-aos-duration="1000">
             <img class="foto-perfil" src="assets/foto-perfil.jpg" alt="foto-perfil" data-aos="fade-in" data-aos-delay="700" data-aos-duration="2000">
-            <aside class="sub-presentacion-texto" data-aos="fade-right" data-aos-duration="2000">Soy desrrollador web Front-End, con manejo de ReactJS. Vivo en Argentina mas especificamente en Rio Tercero provincia de Cordoba. Me apasiona podes crear codigos que aporten soluciones, ademas del diseño. Tengo conocimiento de HTML, CSS, JavasCript y ReactJS. Soy autodidacta y actualmente me encuentro en el aprendizaje de nuevas herramientas-tecnologias para poder ampliar mi portafolio.</aside>
-            <aside class="contenedor-iconos">
+            <section class="sub-presentacion-texto" data-aos="fade-right" data-aos-duration="2000">Soy desrrollador web Front-End, con manejo de ReactJS. Vivo en Argentina mas especificamente en Rio Tercero provincia de Cordoba. Me apasiona podes crear codigos que aporten soluciones, ademas del diseño. Tengo conocimiento de HTML, CSS, JavasCript y ReactJS. Soy autodidacta y actualmente me encuentro en el aprendizaje de nuevas herramientas-tecnologias para poder ampliar mi portafolio.</section>
+            <section class="contenedor-iconos">
                 <img class="iconos-tecnologias" src="assets/html.png" alt="icono-html">
                 <img class="iconos-tecnologias" src="assets/css.png" alt="icono-css">
                 <img class="iconos-tecnologias" src="assets/icono-js.png" alt="icono-js">
                 <img class="iconos-tecnologias" src="assets/icono-react.png" alt="icono-react">
-            </aside>
-        </section>
+            </section>
+        </aside>
+
+        <aside class="proyectos">
+            <article class="card" data-aos="fade-right" data-aos-duration="2000">
+                <a href="https://codificador-de-texto.vercel.app/" target="_blank">
+                    <img class="screen-proyecto" src="assets/preview-proyecto-encriptador.png" alt="preview-proyecto">
+                </a>
+    
+                <section class="contenedor-titulo-descripcion-proyecto">
+                    <h2>Encriptador de texto</h2>
+                    <p class="descripcion-proyecto">Este proyecto consiste en poder encriptar el texto deseado. Lo hice con el proposito de poder practicar el manejo de variables de Javascript.</p>
+                </section>
+            </article>
+            
+            <article class="card" data-aos="fade-left" data-aos-duration="2000">
+                <section class="contenedor-titulo-descripcion-proyecto">
+                    <h2>App del clima</h2>
+                    <p class="descripcion-proyecto">Pagina web para poder consultar el estado del tiempo en cualquier parte del mundo. Si bien el diseño es demasiado basico me concentré mas en el objetivo de poder practicar el manejo de promesas Javascript.</p>
+                </section>
+
+                <a href="https://app-clima-js-red.vercel.app/" target="_blank">
+                    <img class="screen-proyecto" src="assets/preview-proyecto-app-clima.png" alt="preview-proyecto">
+                </a>
+            </article>
+            
+            <article class="card" data-aos="fade-right" data-aos-duration="2000">
+                <a href="https://calculadora-js-lime.vercel.app/" target="_blank">
+                    <img class="screen-proyecto" src="assets/preview-proyecto-calculadora.png" alt="preview-proyecto">
+                </a>
+
+                <section class="contenedor-titulo-descripcion-proyecto">
+                    <h2>Calculadora</h2>
+                    <p class="descripcion-proyecto">Clasico proyecto de Javascript. Fue mi primer proyecto/meta para poder practicar el lenguaje. Lo hice basandome en el diseño de una calculadora convencional y fuí creando cada una de las funciones para luego poder vincularlas con los botones.</p>
+                </section>
+            </article>
+        </aside>
     </main>
+    
+    <footer>
+        <p>Lautaro Tresca</p>
+    </footer>
+
+
+
 
     <script src="main.js"></script>;
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>;
