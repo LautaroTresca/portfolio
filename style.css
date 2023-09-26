@@ -34,10 +34,11 @@ a{
 
 .nav{
     display: flex;
+    box-shadow: black 0px -10px 32px;
     height: 5rem;
     align-items: baseline;
     justify-content: space-between;
-    margin: 0rem 3rem 0rem 3rem;
+    padding: 0rem 3rem;
 }
 
 .nav-nombre{
@@ -67,16 +68,34 @@ a{
     place-content: center;
     width: 100%;
 }
-.presentacion-texto{
+.presentacion-texto-1{
     position: relative;
     color: #e3e3e3;
-    font-weight: 900;
-    font-size: 100px;
+    font-size: 40px;
     margin: 0;
     width: fit-content;
 }
 
+.presentacion-texto-2{
+    position: relative;
+    color: #e3e3e3;
+    font-weight: 500;
+    font-size: 150px;
+    margin: 0;
+    width: fit-content;
+}
+
+.presentacion-texto-3{
+    display: flex;
+    position: relative;
+    color: #e3e3e3;
+    font-size: 30px;
+    margin: 0;
+    justify-content: flex-end;
+}
+
 .sub-presentacion{
+    box-shadow: #5b1e93 0px 10px 100px;
     width: inherit;
     height: max-content;
     display: grid;
