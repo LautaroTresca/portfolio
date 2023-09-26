@@ -77,17 +77,22 @@ a{
 }
 
 .sub-presentacion{
-    height: 35rem;
-    display: flex;
-    align-items: center;
-    gap: 4rem;
+    width: inherit;
+    height: max-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
     color: white;
     background-color: #000000cc;
-    padding: 0rem 3rem 0rem 3rem;
+    padding: 5rem;
+    justify-items: center;
+    align-items: center;
 }
 
 .sub-presentacion-texto{
-    font-size: 2rem;
+    font-size: 24px;
     height: max-content;
 }
 
@@ -96,4 +101,16 @@ a{
     height: 300px;
     border-radius: 250px;
     object-fit: cover;
+}
+
+.contenedor-iconos{
+    display: flex;
+    width: 40rem;
+    grid-column: 1/4;
+    justify-content: space-evenly;
+}
+
+.iconos-tecnologias{
+    width: 120px;
+    height: 120px;
 }
