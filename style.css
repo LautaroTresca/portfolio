@@ -119,12 +119,13 @@ a{
 .sub-presentacion-texto{
     font-size: 24px;
     height: max-content;
+    color: #cdc1ab;
 }
 
 .foto-perfil{
-    width: 300px;
-    height: 300px;
-    border-radius: 250px;
+    width: 230px;
+    height: 230px;
+    border-radius: 15px;
     object-fit: cover;
 }
 
@@ -136,8 +137,8 @@ a{
 }
 
 .iconos-tecnologias{
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
 }
 
 .proyectos{
@@ -145,9 +146,18 @@ a{
     display: flex;
     flex-direction: column;
     background-color: #000000cc;
-    padding: 4rem 0rem 4rem 0rem;
-    color: white;
+    padding: 5rem 0rem 20rem 0rem;
+    color: #cdc1ab;
     gap: 15rem;
+}
+
+.proyectos-titulo{
+    text-align: center;
+    font-size: 70px;
+}
+
+.proyectos-flecha-abajo{
+    width: 2rem;
 }
 
 .card{
