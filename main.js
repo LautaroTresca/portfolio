@@ -8,10 +8,23 @@ setInterval(() => {
     navDeveloper.classList.toggle("subir");
 }, 4000);
 
-botonSobreMi.addEventListener("click", () => {    
-    window.scrollTo(0, 990);
-});
+if(window.innerWidth > 480){
+    botonSobreMi.addEventListener("click", () => {    
+        window.scroll({
+            top: 900,
+            behavior: "smooth"
+        });
+    });
+    
+    botonProyectos.addEventListener("click", () => {
+        window.scroll({
+            top: 1500,
+            behavior: "smooth"
+        });
+    });
+}
 
-botonProyectos.addEventListener("click", () => {
-    window.scrollTo(0, 2000);
-});
+
+addEventListener("scroll", () => {
+    console.log(window.scrollY)
+})
