@@ -89,6 +89,7 @@ a{
 }
 
 .panel-navegacion-boton-proyectos, .panel-navegacion-boton-sobre-mi{
+    cursor: pointer;
     color:#d5c5c5
 }
 
@@ -298,6 +299,7 @@ footer{
         text-align: center;
         align-items: center;
     }
+
 
     .presentacion{
         display: flex;
