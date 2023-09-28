@@ -11,12 +11,8 @@
 
 
 body{
-    background-image: url(assets/milad-fakurian-nY14Fs8pxT8-unsplash.jpg);
+    background: url(assets/milad-fakurian-nY14Fs8pxT8-unsplash.jpg) center fixed;
     background-size:cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -26,18 +22,18 @@ a{
     color:initial;
 }
 
-.nav-icono-nombre{
+.header-nav-icono-nombre{
     display: flex;
     align-items: baseline;
     gap: 10px;
 }
 
-.icono-nombre{
+.icono-nombre-header{
     width: 15px;
     height: 15px;
 }
 
-.nav{
+.header-nav{
     display: flex;
     box-shadow: black 0px -10px 32px;
     height: 5rem;
@@ -73,29 +69,26 @@ a{
     place-content: center;
     width: 100%;
     height: 53rem;
-}
-.presentacion-texto-1{
-    position: relative;
     color: #e3e3e3;
-    font-size: 40px;
-    margin: 0;
+    font-size: 30px;
+}
+.presentacion-texto-saludo{
     width: fit-content;
+    position: relative;
+    margin: 0;
 }
 
-.presentacion-texto-2{
+.presentacion-texto-nombre{
+    width: fit-content;
     position: relative;
-    color: #e3e3e3;
     font-weight: 500;
     font-size: 150px;
     margin: 0;
-    width: fit-content;
 }
 
-.presentacion-texto-3{
+.presentacion-texto-soy{
     display: flex;
     position: relative;
-    color: #e3e3e3;
-    font-size: 30px;
     margin: 0;
     justify-content: flex-end;
 }
@@ -160,7 +153,7 @@ a{
     width: 2rem;
 }
 
-.card{
+.contenedor-titulo-proyecto{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -196,9 +189,9 @@ a{
 footer{
     height: 70px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0rem 2rem 0rem 2rem;
     background-color: #ffffff5c;
 }
 
@@ -218,4 +211,96 @@ footer{
 .iconos-redes-sociales:hover{
     background-color: #ffffff;
     transition: all ease .3s;
+}
+
+
+@media (width <= 768px){
+    .presentacion-texto-nombre{
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .presentacion{
+        justify-items: center;
+    }
+
+    .sub-presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-titulo-proyecto{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .app-clima{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+}
+
+@media (width <= 480px){
+    .header-nav{
+        justify-content: center;
+        height: 5rem;
+        padding: 0;
+    }
+
+    .icono-nombre-header, .nav-nombre{
+        display: none;
+    }
+
+    .panel-navegacion{
+        text-align: center;
+        align-items: center;
+    }
+
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentacion-texto-soy{
+        font-size: 25px;
+    }
+
+    .sub-presentacion{
+        padding: 1rem;
+    }
+
+    .foto-perfil{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor-iconos{
+        width: 100%;
+    }
+
+    .iconos-tecnologias{
+        width: 60px;
+        height: 60px;
+    }
+
+    .contenedor-titulo-descripcion-proyecto{
+        width: 100%;
+    }
+
+    .screen-proyecto{
+        width: 90%;
+    }
+
+    footer{
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .iconos-redes-sociales{
+        width: 30px;
+    }
 }
