@@ -243,6 +243,10 @@ footer{
 }
 
 @media (width <= 480px){
+    *{
+        overflow-x: hidden;
+    }
+
     .header-nav{
         justify-content: center;
         height: 5rem;
@@ -286,6 +290,11 @@ footer{
     .iconos-tecnologias{
         width: 60px;
         height: 60px;
+    }
+
+    .proyectos{
+        padding: 5rem 0rem 8rem 0rem ;
+        gap: 10rem;
     }
 
     .contenedor-titulo-descripcion-proyecto{
