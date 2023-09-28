@@ -19,7 +19,7 @@ body{
 a{
     width: fit-content;
     text-decoration: none;
-    color:initial;
+    color: inherit;
 }
 
 .header-nav-icono-nombre{
@@ -33,7 +33,17 @@ a{
     height: 15px;
 }
 
+.contenedor-nav-header{
+    overflow-y: hidden;
+    height: 30px;
+    font-size: x-large;
+    cursor: pointer;
+    color: #d5c5c5;
+    font-weight: 500;
+}
+
 .header-nav{
+    position: relative;
     display: flex;
     box-shadow: black 0px -10px 32px;
     height: 5rem;
@@ -43,8 +53,21 @@ a{
 }
 
 .nav-nombre{
-    cursor: pointer;
-    color: #d5c5c5;
+    display: block;
+    position: relative;
+    bottom: 0;
+    transition: ease .5s;
+}
+
+.nav-developer{
+    display: inline;
+    position: relative;
+    bottom: 0;
+    transition: ease .5s;
+}
+
+.subir{
+    bottom: 28px;
 }
 
 .panel-navegacion{
@@ -55,13 +78,23 @@ a{
     gap: 2rem;
 }
 
-.panel-navegacion-home {
+.panel-navegacion-boton-home {
     cursor: pointer;
     color:#4c56b3;
 }
 
-.panel-navegacion-work, .panel-navegacion-about{
+.panel-navegacion-boton-home:hover{
+    color: #e3e3e3;
+    transition: linear .1s;
+}
+
+.panel-navegacion-boton-proyectos, .panel-navegacion-boton-sobre-mi{
     color:#d5c5c5
+}
+
+.panel-navegacion-boton-proyectos:hover, .panel-navegacion-boton-sobre-mi:hover{
+    color: #4c56b3;
+    transition:linear .1s;
 }
 
 .presentacion{
@@ -79,8 +112,8 @@ a{
 }
 
 .presentacion-texto-nombre{
+    text-align: center;
     width: fit-content;
-    position: relative;
     font-weight: 500;
     font-size: 150px;
     margin: 0;
