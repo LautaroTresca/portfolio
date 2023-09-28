@@ -261,6 +261,8 @@ footer{
     .presentacion{
         display: flex;
         flex-direction: column;
+        height: fit-content;
+        margin: 4rem 0rem 10rem 0rem;
         align-items: center;
     }
 
