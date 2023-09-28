@@ -13,7 +13,6 @@
 body{
     background: url(assets/milad-fakurian-nY14Fs8pxT8-unsplash.jpg) center fixed;
     background-size:cover;
-    image-rendering: optimizeSpeed;
     font-family: 'Barlow', sans-serif;
 }
 
