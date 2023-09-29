@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar{
@@ -12,7 +13,9 @@
 
 
 body{
-    background: url(assets/milad-fakurian-nY14Fs8pxT8-unsplash.jpg) center fixed;
+    background-image: url(assets/milad-fakurian-nY14Fs8pxT8-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
     background-size:cover;
     font-family: 'Barlow', sans-serif;
 }
@@ -22,11 +25,50 @@ a{
     text-decoration: none;
     color: inherit;
 }
+.header-nav{
+    position: relative;
+    display: flex;
+    box-shadow: black 0px -10px 32px;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+}
 
 .header-nav-icono-nombre{
     display: flex;
     align-items: baseline;
     gap: 10px;
+}
+
+.icono-menu-desplegable{
+    cursor: pointer;
+    display: none;
+    width: 36px;
+    height: 36px;
+    background-color: #00000000;
+    border: none;
+}
+
+.lista-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.elementos-lista-menu-desplegable{
+    cursor: pointer;
+    font-size: 36px;
+    color:#e3e3e3;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #000000e7;
+    width: 100%;
 }
 
 .icono-nombre-header{
@@ -43,15 +85,6 @@ a{
     font-weight: 500;
 }
 
-.header-nav{
-    position: relative;
-    display: flex;
-    box-shadow: black 0px -10px 32px;
-    height: 5rem;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0rem 3rem;
-}
 
 .nav-nombre{
     display: block;
@@ -250,14 +283,42 @@ footer{
 
 
 @media (min-width: 768px) and (max-width: 1320px){
+    .panel-navegacion{
+        gap: 0;
+    }
+
+    .panel-navegacion-boton-home, .panel-navegacion-boton-proyectos, .panel-navegacion-boton-sobre-mi{
+        display: none;
+    }
+    
+    .icono-menu-desplegable{
+        display: flex;
+    }
+
     .presentacion{
         justify-items: center;
+    }
+
+    .presentacion-texto-nombre{
+        font-size: 150px;
     }
 }
 
 
 
 @media (width <= 768px){
+    .panel-navegacion{
+        gap: 0;
+    }
+    
+    .panel-navegacion-boton-home, .panel-navegacion-boton-proyectos, .panel-navegacion-boton-sobre-mi{
+        display: none;
+    }
+    
+    .icono-menu-desplegable{
+        display: flex;
+    }
+
     .presentacion{
         justify-items: center;
     }
@@ -287,35 +348,23 @@ footer{
 }
 
 @media (width <= 480px){
-    *{
-        overflow-x: hidden;
-    }
-
-    .header-nav{
-        justify-content: center;
-        height: 5rem;
-        padding: 0;
-    }
-
-    .contenedor-nav-header{
-        display: none;
-    }
-
-    .icono-nombre-header, .nav-nombre{
+    .icono-nombre-header{
         display: none;
     }
 
     .panel-navegacion{
-        text-align: center;
-        align-items: center;
+        gap: 0;
     }
-
 
     .presentacion{
         display: flex;
         flex-direction: column;
         height: 42rem;
         align-items: center;
+    }
+
+    .presentacion-texto-nombre{
+        font-size: 100px;
     }
 
     .presentacion-texto-soy{
