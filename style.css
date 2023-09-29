@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar{
@@ -248,15 +249,24 @@ footer{
 }
 
 
-@media (width <= 768px){
-    .presentacion-texto-nombre{
-        font-size: 100px;
-        text-align: center;
-    }
-
+@media (min-width: 768px) and (max-width: 1320px){
     .presentacion{
         justify-items: center;
     }
+}
+
+
+
+@media (width <= 768px){
+    .presentacion{
+        justify-items: center;
+    }
+    
+    .presentacion-texto-nombre{
+        font-size: 120px;
+        text-align: center;
+    }
+
 
     .sub-presentacion{
         display: flex;

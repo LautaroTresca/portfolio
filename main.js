@@ -8,6 +8,8 @@ setInterval(() => {
     navDeveloper.classList.toggle("subir");
 }, 4000);
 
+
+
 if(window.innerWidth > 480){
     botonSobreMi.addEventListener("click", () => {    
         window.scroll({
@@ -23,6 +25,9 @@ if(window.innerWidth > 480){
         });
     });
 }
+
+
+
 
 
 addEventListener("scroll", () => {
