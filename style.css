@@ -302,6 +302,26 @@ footer{
     .presentacion-texto-nombre{
         font-size: 150px;
     }
+
+    .sub-presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-titulo-proyecto{
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .app-clima{
+        flex-direction: column-reverse;
+    }
+
+    .screen-proyecto{
+        width: 700px;
+        height: auto;
+    }
 }
 
 

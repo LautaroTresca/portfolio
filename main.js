@@ -15,7 +15,6 @@ addEventListener("scroll", () => {
             menuDesplegable.style.display = "none";
         }
     }, 500);
-    console.log(window.scrollY)
 })
 
 
