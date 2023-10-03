@@ -1,0 +1,26 @@
+footer{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem 0rem 2rem;
+    background-color: #ffffff5c;
+}
+
+.nombre-footer{
+    font-weight: 500;
+    color: #000000;
+}
+
+.iconos-redes-sociales{
+    margin: 3px;
+    background-color: #ffffff7d;
+    border-radius: 300px;
+    border: solid #ffffff7d 1px;
+    width: 24px;
+}
+
+.iconos-redes-sociales:hover{
+    background-color: #ffffff;
+    transition: all ease .3s;
+}

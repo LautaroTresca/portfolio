@@ -1,0 +1,107 @@
+.header-nav{
+    position: relative;
+    display: flex;
+    box-shadow: black 0px -10px 32px;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 3rem;
+}
+
+.header-nav-icono-nombre{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.icono-menu-desplegable{
+    cursor: pointer;
+    display: none;
+    width: 36px;
+    height: 36px;
+    background-color: #00000000;
+    border: none;
+}
+
+.lista-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.elementos-lista-menu-desplegable{
+    cursor: pointer;
+    font-size: 36px;
+    color:#e3e3e3;
+}
+
+.menu{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #000000e7;
+    width: 100%;
+}
+
+.icono-nombre-header{
+    width: 15px;
+    height: 15px;
+}
+
+.contenedor-nav-header{
+    overflow-y: hidden;
+    height: 30px;
+    font-size: x-large;
+    cursor: pointer;
+    color: #d5c5c5;
+    font-weight: 500;
+}
+
+
+.nav-nombre{
+    display: block;
+    position: relative;
+    bottom: 0;
+    transition: ease .5s;
+}
+
+.nav-developer{
+    display: inline;
+    position: relative;
+    bottom: 0;
+    transition: ease .5s;
+}
+
+.subir{
+    bottom: 28px;
+}
+
+.panel-navegacion{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 500;
+    gap: 2rem;
+}
+
+.panel-navegacion-boton-home {
+    cursor: pointer;
+    color:#4c56b3;
+}
+
+.panel-navegacion-boton-home:hover{
+    color: #e3e3e3;
+    transition: linear .1s;
+}
+
+.panel-navegacion-boton-proyectos, .panel-navegacion-boton-sobre-mi{
+    cursor: pointer;
+    color:#d5c5c5
+}
+
+.panel-navegacion-boton-proyectos:hover, .panel-navegacion-boton-sobre-mi:hover{
+    color: #4c56b3;
+    transition:linear .1s;
+}
+

@@ -1,0 +1,161 @@
+@media (min-width: 768px) and (max-width: 1320px){
+    .panel-navegacion{
+        gap: 0;
+    }
+
+    .panel-navegacion-boton-home, .panel-navegacion-boton-proyectos, .panel-navegacion-boton-sobre-mi{
+        display: none;
+    }
+    
+    .icono-menu-desplegable{
+        display: flex;
+    }
+
+    .presentacion{
+        justify-items: center;
+    }
+
+    .presentacion-texto-nombre{
+        font-size: 140px;
+    }
+
+    .sub-presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-titulo-proyecto{
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .app-clima{
+        flex-direction: column-reverse;
+    }
+
+    .screen-proyecto{
+        width: 700px;
+        height: auto;
+    }
+}
+
+
+
+@media (width < 768px){
+    .panel-navegacion{
+        gap: 0;
+    }
+    
+    .panel-navegacion-boton-home, .panel-navegacion-boton-proyectos, .panel-navegacion-boton-sobre-mi{
+        display: none;
+    }
+    
+    .icono-menu-desplegable{
+        display: flex;
+    }
+
+    .presentacion{
+        justify-items: center;
+    }
+    
+    .presentacion-texto-nombre{
+        font-size: 120px;
+        text-align: center;
+    }
+
+
+    .sub-presentacion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .iconos-tecnologias{
+        width: 60px;
+        height: 60px;
+    }
+
+    .contenedor-titulo-proyecto{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .app-clima{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+}
+
+@media (width < 480px){
+    .icono-nombre-header{
+        display: none;
+    }
+
+    .panel-navegacion{
+        gap: 0;
+    }
+
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        height: 42rem;
+        align-items: center;
+    }
+
+    .presentacion-texto-nombre{
+        font-size: 80px;
+    }
+
+    .presentacion-texto-soy{
+        font-size: 25px;
+    }
+
+    .sub-presentacion{
+        padding: 1rem;
+    }
+
+    .foto-perfil{
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+    }
+
+    .contenedor-iconos{
+        width: 100%;
+    }
+
+    .iconos-tecnologias{
+        width: 60px;
+        height: 60px;
+    }
+
+    .proyectos{
+        padding: 5rem 0rem 8rem 0rem ;
+        gap: 10rem;
+    }
+
+    .proyectos-titulo{
+        font-size: 50px;
+    }
+
+    .contenedor-titulo-descripcion-proyecto{
+        width: 100%;
+    }
+
+    .screen-proyecto{
+        width: 90%;
+    }
+
+    footer{
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .iconos-redes-sociales{
+        width: 30px;
+    }
+}

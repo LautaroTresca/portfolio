@@ -1,0 +1,120 @@
+.presentacion{
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 53rem;
+    color: #e3e3e3;
+    font-size: 30px;
+}
+.presentacion-texto-saludo{
+    width: fit-content;
+    position: relative;
+    margin: 0;
+}
+
+.presentacion-texto-nombre{
+    text-align: center;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 150px;
+    margin: 0;
+}
+
+.presentacion-texto-soy{
+    display: flex;
+    position: relative;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.sub-presentacion{
+    box-shadow: #5b1e93 0px 10px 100px;
+    width: inherit;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    color: white;
+    background-color: #000000cc;
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-presentacion-texto{
+    flex: 1 0 fit-content;
+    font-size: 24px;
+    height: max-content;
+    color: #cdc1ab;
+}
+
+.foto-perfil{
+    width: 230px;
+    height: 230px;
+    border-radius: 150px;
+    object-fit: cover;
+    image-resolution: 400dpi;
+}
+
+.contenedor-iconos{
+    width: 40rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconos-tecnologias{
+    width: 70px;
+    height: 70px;
+}
+
+.proyectos{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000cc;
+    padding: 5rem 0rem 20rem 0rem;
+    color: #cdc1ab;
+    gap: 15rem;
+}
+
+.proyectos-titulo{
+    text-align: center;
+    font-size: 70px;
+}
+
+.proyectos-flecha-abajo{
+    width: 2rem;
+}
+
+.contenedor-titulo-proyecto{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.screen-proyecto{
+    opacity: 90%;
+    width: 500px;
+    height: 300px;
+    object-fit:cover;
+    object-position: center;
+    border: #575656 solid 1px;
+}
+
+.screen-proyecto:hover{
+    opacity: 70%;
+    border: #999999 solid 1px;
+    transition: ease-in-out .3s;
+}
+
+.contenedor-titulo-descripcion-proyecto{
+    display: flex;
+    height: fit-content;
+    width: 512px;
+    flex-direction: column;
+}
+
+.descripcion-proyecto{
+    font-size: 20px;
+}

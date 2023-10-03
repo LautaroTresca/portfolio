@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;700&family=Raleway:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-image: url(../assets/milad-fakurian-nY14Fs8pxT8-unsplash.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size:cover;
+    font-family: 'Barlow', sans-serif;
+}
+
+a{
+    width: fit-content;
+    text-decoration: none;
+    color: inherit;
+}
